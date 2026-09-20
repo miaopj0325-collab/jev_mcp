@@ -27,24 +27,24 @@ This MCP server brings Jev's high-speed decision primitives into your favorite A
 
 ---
 
-## Quick Start
+## Quick Start (Zero-Install / No Clone Required) 🚀
+
+You can run this MCP directly from GitHub without cloning or manual installs!
 
 ### 1. Get your API Key
 Obtain an API key with access to Jev models via [OpenRouter](https://openrouter.ai/keys).
 
 ### 2. Configure Your Client
 
-You can run this MCP directly via **npm package** (`jev-decision-mcp`) or directly from **GitHub** (`github:miaopj0325-collab/jev_mcp`) without cloning.
-
 #### A. Claude Desktop
-Add this to your `claude_desktop_config.json` (Mac: `~/Library/Application Support/Claude/claude_desktop_config.json`, Windows: `%APPDATA%\Claude\claude_desktop_config.json`):
+Add this to your `claude_desktop_config.json`:
 
 ```json
 {
   "mcpServers": {
     "jev": {
       "command": "npx",
-      "args": ["-y", "jev-decision-mcp"],
+      "args": ["-y", "github:miaopj0325-collab/jev_mcp"],
       "env": {
         "OPENROUTER_API_KEY": "sk-or-v1-xxxxxxxxxxxxxxxx"
       }
@@ -61,7 +61,7 @@ Add to your `.gemini/config/mcp_config.json`:
   "mcpServers": {
     "jev": {
       "command": "npx",
-      "args": ["-y", "jev-decision-mcp"],
+      "args": ["-y", "github:miaopj0325-collab/jev_mcp"],
       "env": {
         "OPENROUTER_API_KEY": "sk-or-v1-xxxxxxxxxxxxxxxx"
       }
@@ -76,7 +76,7 @@ Add to your `.gemini/config/mcp_config.json`:
   "mcpServers": {
     "jev": {
       "command": "npx",
-      "args": ["-y", "jev-decision-mcp"],
+      "args": ["-y", "github:miaopj0325-collab/jev_mcp"],
       "env": {
         "OPENROUTER_API_KEY": "sk-or-v1-xxxxxxxxxxxxxxxx"
       }
@@ -85,8 +85,7 @@ Add to your `.gemini/config/mcp_config.json`:
 }
 ```
 
-> **Tip**: You can also run directly from GitHub without npm install:  
-> `"args": ["-y", "github:miaopj0325-collab/jev_mcp"]`
+*(Optional: Once published to npm registry, you can also use `"args": ["-y", "jev-decision-mcp"]`)*
 
 ---
 
