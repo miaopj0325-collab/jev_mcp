@@ -1,0 +1,39 @@
+{
+  "name": "jev-mcp",
+  "version": "1.0.0",
+  "description": "Model Context Protocol (MCP) server for TypeSafe AI's Jev - Ultra-fast System 1 decision primitives (Noul, Choice, Score)",
+  "main": "src/index.js",
+  "bin": {
+    "jev-mcp": "./bin/index.js"
+  },
+  "scripts": {
+    "start": "node ./bin/index.js",
+    "test": "node ./test/verify.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miaopj0325-collab/jev_mcp.git"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "jev",
+    "typesafe-ai",
+    "system-1",
+    "decision-models",
+    "openrouter",
+    "ai-agents"
+  ],
+  "author": "miaopj0325-collab",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/miaopj0325-collab/jev_mcp/issues"
+  },
+  "homepage": "https://github.com/miaopj0325-collab/jev_mcp#readme",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.6.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
