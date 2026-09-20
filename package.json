@@ -1,10 +1,21 @@
 {
-  "name": "jev-mcp",
+  "name": "jev-decision-mcp",
   "version": "1.0.0",
   "description": "Model Context Protocol (MCP) server for TypeSafe AI's Jev - Ultra-fast System 1 decision primitives (Noul, Choice, Score)",
   "main": "src/index.js",
   "bin": {
+    "jev-decision-mcp": "./bin/index.js",
     "jev-mcp": "./bin/index.js"
+  },
+  "files": [
+    "bin",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   },
   "scripts": {
     "start": "node ./bin/index.js",
